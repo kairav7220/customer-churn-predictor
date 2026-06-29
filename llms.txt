@@ -8,6 +8,8 @@ Flask web app that predicts telecom customer churn using a Random Forest model w
 - `templates/home.html` — Jinja2 form with 19 fields, colored result banner, SHAP factors
 - `model.sav` — Pickled RandomForestClassifier (trained on 7,047 tel_churn.csv records)
 - `tel_churn.csv` — One-hot encoded training data (50 feature columns)
+- `CONTRIBUTING.md` — Contribution guide
+- `llms.txt` — This file (AI assistant context)
 
 ## Architecture
 - Model loaded once at module level (`pickle.load('model.sav')`)
