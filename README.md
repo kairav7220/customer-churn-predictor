@@ -138,7 +138,7 @@ Response:
 
 ## Comparison
 
-| Feature | This Project | Basic Churn App | Enterprise Tool |
+| Feature | Customer Churn Predictor | Basic Churn App | Enterprise Tool |
 |---|---|---|---|
 | Per-Customer Explanations | ✅ SHAP TreeExplainer | ❌ Global only | ✅ |
 | API | ✅ JSON + Form | ❌ Form only | ✅ |
