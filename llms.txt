@@ -1,0 +1,33 @@
+# Customer Churn Predictor — AI Context
+
+## Overview
+Flask web app that predicts telecom customer churn using a Random Forest model with SHAP-based per-customer explanations.
+
+## Key Files
+- `app.py` — Flask routes (GET/POST /, /api/predict, /health) + encoding logic + SHAP explainer
+- `templates/home.html` — Jinja2 form with 19 fields, colored result banner, SHAP factors
+- `model.sav` — Pickled RandomForestClassifier (trained on 7,047 tel_churn.csv records)
+- `tel_churn.csv` — One-hot encoded training data (50 feature columns)
+
+## Architecture
+- Model loaded once at module level (`pickle.load('model.sav')`)
+- Custom `encode_input()` maps raw form values to one-hot columns via dict
+- SHAP TreeExplainer generates per-customer top-3 factors
+- Dual interface: form POST for humans, JSON POST for /api/predict
+
+## Key Decisions
+- Dict-based one-hot encoding (not pd.get_dummies) to ensure exact column match
+- THRESHOLD=0.35 (not default 0.5) for business sensitivity
+- Confidence = prob_churn when predicting churn, 1-prob_churn when predicting stay
+- Human-readable FEATURE_DISPLAY map for all 50 ML columns
+
+## Features to Maintain
+- Input validation: float/int coercion with try/except
+- Loading state on submit button (disabled + "Predicting...")
+- fmt_num() strips .0 from whole numbers; fmt_pct() strips .00 from confidence
+- .form-label class on all labels (no cascade inheritance)
+
+## Deployment
+- Render: gunicorn app:app
+- Health check: /health
+- No env vars or database required
