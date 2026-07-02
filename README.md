@@ -25,8 +25,8 @@
   <img src="https://img.shields.io/badge/SHAP-Explanations-purple" alt="SHAP"/>
   <img src="https://img.shields.io/badge/Render-Deploy-46E3B7?logo=render&logoColor=white" alt="Render"/>
   <img src="https://img.shields.io/badge/license-MIT-green" alt="MIT License"/>
-  <a href="https://colab.research.google.com/drive/1V8CW2nAoEjdAXlZ_SnuvWgl3QVPpVs3G?usp=sharing" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="EDA Analysis"/></a>
-  <a href="https://colab.research.google.com/drive/1686JczWKoquwu54BCVNxrmFWvOcBrZB1?usp=sharing" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Model Training"/></a>
+  <a href="https://colab.research.google.com/drive/1V8CW2nAoEjdAXlZ_SnuvWgl3QVPpVs3G?usp=sharing" target="_parent"><img src="https://img.shields.io/badge/EDA-Notebook-007ec6?logo=googlecolab&logoColor=white" alt="EDA Notebook"/></a>
+  <a href="https://colab.research.google.com/drive/1686JczWKoquwu54BCVNxrmFWvOcBrZB1?usp=sharing" target="_parent"><img src="https://img.shields.io/badge/Model-Training-007ec6?logo=googlecolab&logoColor=white" alt="Model Training"/></a>
 </p>
 
 ---
