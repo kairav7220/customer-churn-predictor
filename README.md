@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <a href="https://customer-churn-predictor-jha2.onrender.com/" target="_blank">
+  <a href="https://customer-churn-predictor-4j7o.onrender.com/" target="_blank">
     <img src="https://img.shields.io/badge/Live_Demo-Render-46E3B7?logo=render&logoColor=white" alt="Live Demo"/>
   </a>
 </p>
