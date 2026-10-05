@@ -161,7 +161,6 @@ customer-churn-predictor/
 │   └── home.html           # Web UI form + result banner
 ├── requirements.txt        # Python dependencies
 ├── CONTRIBUTING.md         # Contribution guide
-├── llms.txt                # AI assistant context
 ├── .gitignore
 └── LICENSE
 ```
